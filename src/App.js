@@ -10,7 +10,7 @@ function App() {
       title: "Simon Says Game",
       description:
         "An interactive 'Simon Says' game built using HTML, CSS, and JavaScript, designed to challenge users' memory and responsiveness. This game features dynamic random sequence generation, user input detection, and real-time audio-visual feedback to enhance engagement.",
-      image: "/light.jpg",
+      image: `${process.env.PUBLIC_URL}/light.jpg`,
       challenges: [
         "Handling real-time audio-visual feedback.",
         "Ensuring smooth user interaction and input validation.",
@@ -22,7 +22,7 @@ function App() {
       title: "Event Management System",
       description:
         "An event management web application developed using MySQL, PHP, and HTML/CSS, designed to streamline university events across various venues. This platform incorporates user authentication, event scheduling functionalities, and role-based access control to ensure a seamless user experience.",
-      image: "/event2 - Copy.jpg",
+        image: `${process.env.PUBLIC_URL}/event2 - Copy.jpg`,
       challenges: [
         "Creating an interactive user interface.",
         "Integrating backend PHP with MySQL.",
@@ -34,7 +34,8 @@ function App() {
       title: "Poemsy",
       description:
         "A social platform web application for poets, developed using MySQL, PHP, and HTML/CSS. This platform enables poets to post their poems and receive feedback through likes and comments. It incorporates user authentication, categorized poems, and features for posting, liking, and commenting, providing an engaging and seamless user experience.",
-      image: "/poem.jpg",
+        image: `${process.env.PUBLIC_URL}/poem.jpg`,
+
       challenges: [
         "Building the UI components.",
         "Implementing the comment feature.",
@@ -93,7 +94,7 @@ function App() {
           Additionally, I am deeply interested in web development and creating
           user-centric applications.
         </p>
-        <a href="/r.pdf" download="My_Resume.pdf" className="download-link">
+        <a href={`${process.env.PUBLIC_URL}/r.pdf`} download="My_Resume.pdf" className="download-link">
           My Resume
         </a>
       </section>
