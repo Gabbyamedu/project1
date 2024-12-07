@@ -78,7 +78,7 @@ function App() {
           </p>
         </div>
         <div className="image-content">
-          <img src="/IMG_0696.jpg" alt="Gabriella Amedu" className="avatar" />
+          <img src={`${process.env.PUBLIC_URL}/IMG_0696.jpg`} alt="Gabriella Amedu" className="avatar" />
         </div>
       </section>
 
